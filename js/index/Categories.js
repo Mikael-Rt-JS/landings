@@ -32,7 +32,7 @@ class Categories{
     let newData=[];
     if(await data){
       for(let i=0;i<data.length;i++){
-        if(data[i]['id']===categories_id){
+        if(data[i]['categories_id']===categories_id){
           newData.push(data[i])
         }
       }
