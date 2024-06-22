@@ -52,7 +52,7 @@ window.onload=async e=>{
         })[0];
         let user=getUsers.filter((item,index)=>item.id===user_id)[0]
         let newLinkBack=sait['info_link'].replace('./','').replace('.html','')
-        let demoLink=`./landing1.html?id=${search}&p=${newLinkBack}`;
+        let demoLink=`${sait.demo_link}?id=${search}&p=${newLinkBack}`;
         
         render_user(user)
         render_info(sait,demoLink)
