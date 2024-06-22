@@ -20,7 +20,7 @@
     "image": "production_of_cabins_header.jpg",
     "full_image": "production_of_cabins_full.png",
     "qr_code_image":"production_of_cabins.png",
-    "demo_link": "./https://mikael-rt-js.github.io/production_of_cabins/production_of_cabins.html",
+    "demo_link": "https://mikael-rt-js.github.io/production_of_cabins/production_of_cabins.html",
     "info_link": "./info_product.html"
   }
 ]
