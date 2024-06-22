@@ -1,0 +1,51 @@
+<button id="" class="landing_nav_btn landing_nav_btn-active">Landing Page</button>
+<button id="" class="landing_nav_btn">Сайт-Визитка</button>
+<button id="" class="landing_nav_btn">Корпоративные Сайты</button>
+<button id="" class="landing_nav_btn">Сайты с личным кабинетом</button>
+<button id="" class="landing_nav_btn">Промо-сайты</button>
+<button id="" class="landing_nav_btn">Имиджевый Сайт</button>
+<button id="" class="landing_nav_btn">Сайт-Портфолио</button>
+<button id="" class="landing_nav_btn">Сайт-Каталог</button>
+<button id="" class="landing_nav_btn">Сайт Мероприятий</button>
+<button id="" class="landing_nav_btn">Online-Сервисы</button>
+<button id="" class="landing_nav_btn">Сайты-Квизы</button>
+<button id="" class="landing_nav_btn">Порталы</button>
+<button id="" class="landing_nav_btn">Форумы</button>
+<button id="" class="landing_nav_btn">CRM-Системы</button>
+<button id="" class="landing_nav_btn">Сайты Обменники</button>
+<button id="" class="landing_nav_btn">Интернет-Магазины</button>
+<button id="" class="landing_nav_btn">Маркетплейсы</button>
+<button id="" class="landing_nav_btn">Доски Объявлений</button>
+<button id="" class="landing_nav_btn">Персональный Сайт</button>
+<button id="" class="landing_nav_btn">Блоги</button>
+<button id="" class="landing_nav_btn">Информационные Сайты</button>
+<button id="" class="landing_nav_btn">Новостные Сайты</button>
+<button id="" class="landing_nav_btn">Сайты-Агрегаторы</button>
+<button id="" class="landing_nav_btn">WEBПриложения</button>
+<button id="" class="landing_nav_btn">Lms-Сайты</button>
+<button id="" class="landing_nav_btn">Соцсети</button>
+<button id="" class="landing_nav_btn">Online-Кинотеатры</button>
+<button id="" class="landing_nav_btn">Видеохостинги</button>
+
+
+let categories_sait=[];
+
+function get_ctg(){
+  for(let i=0;i<getcategories.length;i++){
+    categories_sait.push({
+      id:i+1,
+      categories_nameEN: '',
+      categories_nameRU: getcategories[i].innerHTML,
+    })
+  }
+  console.log(JSON.stringify(categories_sait))
+
+}
+
+
+<button class="btn_hidden">1</button>
+<button class="btn_hidden">2</button>
+<button>3</button>
+<button>4</button>
+<button class="btn_hidden">5</button>
+<button class="btn_hidden">6</button>

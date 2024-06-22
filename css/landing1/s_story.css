@@ -1,0 +1,165 @@
+.s_story{
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: minmax(10px,240px) repeat(2,1fr) minmax(10px,240px);
+  grid-template-rows: 1fr;
+  padding: 120px 0;
+  color: #181818;
+  background: #e9ebea;
+  gap: 30px;
+}
+/* ======================================================$ */
+.s_story_left{
+  grid-column: 2/3;
+}
+.s_story_left img{
+  align-self: center;
+}
+/* ======================================================$ */
+
+.s_story_right{
+  grid-column: 3/4;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.s_story_right h2{
+  font-size: 40px;
+  text-align: start;
+}
+.s_story_right p{
+  font-size: 16px;
+  line-height: 30px;
+}
+.s_story_btn{
+  width: 170px;
+  display: block;
+  color: #181818;
+  border: 1px solid #181818;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 13px 20px;
+  border-radius: 3px;
+  transition: all 0.6s;
+}
+.s_story_btn:hover{
+  color:snow;
+  border: 1px solid snow;
+  background: #4dcc8f;
+  transition: all 0.6s;
+}
+/* ======================================================$ */
+/* ======================================================$ 1300px*/
+@media(max-width: 1300px){
+  .s_story{
+    grid-template-columns: minmax(10px,100px) repeat(2,1fr) minmax(10px,100px);
+  }
+
+}
+/* ======================================================$ 1200px*/
+@media(max-width: 1200px){
+
+}
+/* ======================================================$ 1100px*/
+@media(max-width: 1100px){
+
+}
+/* ======================================================$ 1000px*/
+@media(max-width: 1000px){
+  .s_story{
+    grid-template-columns: minmax(10px,20px) 1fr minmax(10px,20px);
+  }
+  .s_story_left{
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+  .s_story_right{
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+}
+/* ======================================================$ 880px*/
+@media(max-width: 880px){
+
+}
+/* ======================================================$ 730px*/
+@media(max-width: 730px){
+
+}
+/* ======================================================$ 560px*/
+@media(max-width: 560px){
+  .s_story{
+    grid-template-columns: 10px 1fr 10px;
+  }
+  .s_story_right h2{
+    font-size: var(--mobile-h2-fs560);
+    text-align: start;
+  }
+  .s_story_right p{
+    font-size: var(--mobile-p-fs560);
+    line-height: 30px;
+  }
+  .s_story_btn{
+    width: 170px;
+    display: block;
+    color: #181818;
+    border: 1px solid #181818;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 13px 20px;
+    border-radius: 3px;
+    transition: all 0.6s;
+  }
+}
+/* ======================================================$ 460px*/
+@media(max-width: 460px){
+
+}
+/* ======================================================$ 360px*/
+@media(max-width: 360px){
+  .s_story_right h2{
+    font-size: var(--mobile-h2-fs360);
+  }
+  .s_story_right p {
+    line-height: 20px;
+  }
+}
+/* ======================================================$ 290px*/
+@media(max-width: 290px){
+  .s_story{
+    gap: 20px;
+  }
+  .s_story_left img{
+    align-self: stretch;
+  }
+}
+/* ======================================================$ 250px*/
+@media(max-width: 250px){
+  .s_story{
+    grid-template-columns: 1fr;
+  }
+  .s_story_left{
+    grid-column: 1/2;
+  }
+  .s_story_right{
+    grid-column: 1/2;
+    padding: 10px;
+  }
+}
+/* ======================================================$ 220px*/
+@media(max-width: 220px){
+  .s_story_right h2{
+    font-size: var(--mobile-h2-fs220);
+  }
+  .s_story_right h2,.s_story_right p{
+    text-align: start;
+  }
+  .s_story_btn{
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,29 @@
+.back_home_a{
+  position: fixed;
+  background: #3a3636;
+  color: snow;
+  font-weight: bold;
+  text-transform: uppercase;
+  height: 30px;
+  width: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 13px;
+  cursor: pointer;
+  opacity: 0.3;
+  top: 5px;
+  left: 5px;
+  /* bottom: 5px; */
+  /* right: 5px; */
+  border: 2px solid snow;
+  transition: all 0.1s;
+  /* display: none; */
+}
+
+.back_home_a:hover{
+  border: 2px solid #2196f3;
+  opacity: 1;
+  color: #2196f3;
+  transition: all 0.1s;
+}

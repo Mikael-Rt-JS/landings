@@ -1,0 +1,138 @@
+.footer{
+  background: #232323;
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(10px,240px) 135px 3fr minmax(10px,240px);
+  padding: 50px 0;
+}
+/* ======================================================$ */
+.footer_logo{
+  grid-column: 2/3;
+  justify-self: start;
+  margin-right: 30px;
+}
+.footer_logo img{
+  width: 130px;
+}
+/* ======================================================$ */
+.footer_citys{
+  grid-column: 3/4;
+  font-size: 13px;  
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.footer_city{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer_city h5{
+  color: snow;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.footer_city_desc{
+  color: snow;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer_city_contact{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer_city_contact a{
+  color: snow;
+}
+
+/* ======================================================$ */
+/* ======================================================$ 1300px*/
+@media(max-width: 1300px){
+  .footer{
+    grid-template-columns: minmax(10px,150px) 135px 3fr minmax(10px,150px);
+  }
+}
+/* ======================================================$ 1100px*/
+@media(max-width: 1100px){
+  .footer{
+    grid-template-columns: minmax(10px,150px) 3fr minmax(10px,150px);
+    grid-row-gap: 20px;
+  }
+  .footer_logo{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-right: 0px;
+    justify-self: center;
+  }
+  .footer_citys{
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+}
+
+/* ======================================================$ 1000px*/
+@media(max-width: 1000px){
+  .footer{
+    grid-template-columns: minmax(10px,50px) 3fr minmax(10px,50px);
+  }
+  .footer_citys{
+    flex-wrap: wrap;
+  }
+}
+/* ======================================================$ 880px*/
+@media(max-width: 880px){
+
+}
+/* ======================================================$ 730px*/
+@media(max-width: 730px){
+
+}
+/* ======================================================$ 560px*/
+@media(max-width: 560px){
+
+}
+/* ======================================================$ 460px*/
+@media(max-width: 460px){
+
+}
+/* ======================================================$ 360px*/
+@media(max-width: 360px){
+  .footer{
+    grid-template-columns: 10px 1fr 10px;
+  }
+}
+/* ======================================================$ 290px*/
+@media(max-width: 290px){
+
+}
+/* ======================================================$ 250px*/
+@media(max-width: 250px){
+
+}
+/* ======================================================$ 220px*/
+@media(max-width: 220px){
+  .footer{
+    grid-template-columns: 1fr;
+  }
+  .footer_logo{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-right: 0px;
+    justify-self: center;
+  }
+  .footer_citys{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-content: start;
+    padding: 0px 5px;
+  }
+  .footer_logo{
+    width: 100px;
+  }
+  .footer_city_contact a{
+    font-size: 12px;
+  }
+}

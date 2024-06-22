@@ -1,0 +1,338 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background: #17191c;
+}
+
+/* ======================================================$ */
+.header{
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 10px 1fr 10px;
+  grid-template-rows: 60px 1fr;
+
+  /* gap: 30px; */
+}
+/* ======================================================$ */
+.header_nav{
+  grid-column: 2/3;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-items: start;
+  border-bottom: 1px solid #3a3636;
+}
+.header_nav a{
+  color: snow;
+  text-transform: uppercase;
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  
+}
+
+/* ======================================================$ */
+.header_block{
+  grid-column: 2/3;
+  grid-row: 2/3;
+  width: 100%;
+  background: #212020;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+}
+/* ======================================================$ */
+.aside_users{
+  grid-column: 1/2;
+}
+.user_info{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* align-items: center; */
+  padding: 20px 15px;
+}
+.user_info img{
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  align-self: center;
+}
+.about_users{
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.about_users h3{
+  font-size: 22px;
+  color: snow;
+}
+.about_users i{
+  font-size: 13px;
+  color: gold;
+}
+/* ======================================================$ */
+.main_sait_info{
+  grid-column: 2/3;
+  color: snow;
+
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50px 650px 1fr 50px;
+  grid-template-rows: 80px auto;
+  gap: 30px;
+}
+.main_sait_info h1{
+  align-self: center;
+  justify-self: center;
+  grid-row: 1/2;
+  grid-column: 2/3;
+  font-size: 45px;
+  
+  /* margin-left: 50px; */
+  /* margin-top: 25px; */
+}
+/* .main_sait_info  */
+.image_sait{
+  justify-self: end;
+  grid-row: 2/3;
+  grid-column: 2/3;
+  width: 600px;
+}
+
+/*  maket_sait_img */
+
+.main_info_group{
+  grid-column: 3/4;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.main_info_group h4{
+  font-size: 20px;
+  font-weight: 600;
+}
+.main_info_group a{
+  display: block;
+  background: #212123;
+  width: 100%;
+  /* #636970; */
+  color: snow;
+  padding: 13px 10px;
+  border-radius: 6px;
+  border: 1px solid snow;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.6s;
+}
+.main_info_group a:hover{
+  color: snow;
+  border: 1px solid rgba(153,207,38,1);
+  background: linear-gradient(180deg, rgba(153,207,38,1) 0%, rgba(57,86,26,1) 100%);
+  transition: all 0.6s;
+}
+.main_info_group a:active{
+  color: snow;
+  border: 1px solid rgba(38,73,207,1);
+  background: linear-gradient(0deg, rgba(38,73,207,1) 0%, rgba(17,189,190,1) 100%);
+  transition: all 0.6s;
+}
+.description_sait{
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+.look{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.qr_code{  
+  align-self: center;
+  display: block;
+  width: 200px;
+  height: 200px;
+}
+.description_sait h3{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* ======================================================$ */
+/* ======================================================$ 1300px*/
+@media(max-width: 1300px){
+  .header_block{
+    grid-template-columns: 1fr;
+  }
+  .aside_users{
+    grid-column: 1/2;
+  }
+  .main_sait_info{
+    grid-column: 1/2;
+
+  }
+  .main_sait_info {
+    /* grid-column: 2 / 3; */
+    color: snow;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10px 650px 1fr 10px;
+    grid-template-rows: 80px auto;
+    gap: 10px;
+  }
+  .qr_code{  
+    width: 120px;
+    height: 120px;
+  }
+}
+/* ======================================================$ 1200px*/
+@media(max-width: 1200px){
+
+}
+/* ======================================================$ 1100px*/
+@media(max-width: 1100px){
+
+}
+/* ======================================================$ 1000px*/
+@media(max-width: 1000px){
+  .main_sait_info{
+    display: grid;
+    grid-template-columns: 10px 1fr 10px;
+    grid-template-rows: 80px auto;
+  }
+  .main_sait_info h1 {
+    align-self: center;
+    justify-self: center;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    font-size: 36px;
+  }
+  .image_sait {
+    justify-self: center;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+  }
+  .main_info_group {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-bottom: 40px;
+  }
+  .main_info_group a {
+    width: 200px;
+  }
+  .main_info_group .description_sait{
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+  .description_sait {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+}
+/* ======================================================$ 880px*/
+@media(max-width: 880px){
+
+}
+/* ======================================================$ 730px*/
+@media(max-width: 730px){
+  .main_sait_info h1 {
+    font-size: 26px;
+  }
+}
+/* ======================================================$ 600px*/
+@media(max-width: 600px){
+  .main_info_group {
+    display: flex;
+    flex-direction: column;
+  }
+  .btn_demo{
+    align-self: center;
+  }
+}
+/* ======================================================$ 560px*/
+@media(max-width: 560px){
+
+}
+/* ======================================================$ 460px*/
+@media(max-width: 460px){
+  .main_sait_info h1 {
+    font-size: 16px;
+  }
+  .about_users h3 {
+    font-size: 16px;
+  }
+}
+/* ======================================================$ 360px*/
+@media(max-width: 360px){
+  .header {
+    display: block;
+  }
+  .main_info_group a {
+      width: 100%;
+  }
+}
+/* ======================================================$ 290px*/
+@media(max-width: 290px){
+  
+  .btn_demo{
+    width: 100%;
+  }
+  .user_info {
+    padding: 20px 0px;
+  }
+  .image_sait{
+    width: 120px;
+    height: auto;
+    grid-column: 1/2;
+
+  }
+  .main_sait_info{
+    grid-template-columns: 1fr;
+  }
+  .main_sait_info h1 {
+    grid-column: 1 / 2;
+  }
+  .main_info_group {
+    grid-column: 1 / 2;
+  }
+}
+/* ======================================================$ 250px*/
+@media(max-width: 250px){
+  .header_nav {
+    height: 60px;
+    padding: 0 10px;
+  }
+  .about_users {
+    align-self: start;
+  }
+  .user_info img {
+    width: 85px;
+    height: 85px;
+  }
+  .main_info_group a {
+    padding: 13px 0px;
+  }
+  .main_info_group h4,.description_sait h3{
+    font-size: 14px;
+  }
+  .description{
+    font-size: 14px;
+  }
+  .main_sait_info{
+    /* display: block; */
+    padding: 0px 5px;
+  }
+}
+/* ======================================================$ 220px*/
+@media(max-width: 220px){
+
+}

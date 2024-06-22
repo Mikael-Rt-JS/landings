@@ -1,0 +1,167 @@
+.s_says{
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: minmax(10px,240px) repeat(2,1fr) minmax(10px,240px);
+  grid-template-rows: 90px 1fr;
+  padding: 100px 0;
+  color: #181818;
+  gap: 20px;
+}
+.s_says h2{
+  align-self: end;
+  grid-column: 2/4;
+  grid-row: 1/2;
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+/* ======================================================$ */
+.s_says_left{
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.s_says_card{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+.s_says_card_msg{
+  padding: 20px;
+  border: 1px solid #999999;
+  border-radius: 3px;
+}
+.s_says_user{
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: end;
+}
+.s_says_user_info{
+  text-align: end;
+}
+.s_says_user_info h4{
+  font-weight: 600;
+  font-size: 16px;
+}
+.s_says_user_info span{
+  font-size: 13px;
+  color: #999999;
+}
+.s_says_user_avatar{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+/* ======================================================$ */
+.s_says_right{
+  grid-column: 3/4;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+/* ======================================================$ */
+/* ======================================================$ 1300px*/
+@media(max-width: 1300px){
+  .s_says{
+    grid-template-columns: minmax(10px,100px) repeat(2,1fr) minmax(10px,100px);
+  }
+}
+/* ======================================================$ 1200px*/
+@media(max-width: 1200px){
+
+}
+/* ======================================================$ 1100px*/
+@media(max-width: 1100px){
+
+}
+/* ======================================================$ 1000px*/
+@media(max-width: 1000px){
+  .s_says{
+    grid-template-columns: minmax(10px,20px) repeat(2,1fr) minmax(10px,20px);
+  }
+}
+/* ======================================================$ 880px*/
+@media(max-width: 880px){
+  .s_says{
+    grid-template-columns: minmax(10px,20px) 1fr minmax(10px,20px);
+  }
+  .s_says h2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .s_says_left{
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .s_says_right{
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+}
+/* ======================================================$ 730px*/
+@media(max-width: 730px){
+
+}
+/* ======================================================$ 560px*/
+@media(max-width: 560px){
+  .s_says h2{
+    font-size: var(--mobile-h2-fs560);
+  }
+}
+/* ======================================================$ 460px*/
+@media(max-width: 460px){
+  .s_says_user{
+    flex-direction: column-reverse;
+  }
+  .s_says_user_info{
+    text-align: center;
+  }
+}
+/* ======================================================$ 360px*/
+@media(max-width: 360px){
+  .s_says{
+    grid-template-columns: 10px 1fr 10px;
+  }
+  .s_says h2{
+    font-size: var(--mobile-h2-fs360);
+  }
+}
+/* ======================================================$ 290px*/
+@media(max-width: 290px){
+
+}
+/* ======================================================$ 250px*/
+@media(max-width: 250px){
+  .s_says{
+    grid-template-columns: 1fr;
+  }
+  .s_says h2{
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .s_says_left{
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .s_says_right{
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+}
+/* ======================================================$ 220px*/
+@media(max-width: 220px){
+  .s_says h2{
+    font-size: var(--mobile-h2-fs220);
+  }
+  .s_says_card_msg {
+      padding: 20px 10px;
+  }
+}

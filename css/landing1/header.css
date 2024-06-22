@@ -1,0 +1,217 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* ======================================================$ */
+.header{
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(10px,240px) 1fr minmax(10px,240px);
+  grid-template-rows: 90px auto;
+  background: #9b9a95;
+}
+.header_block_menu{
+  grid-column: 2/3;
+  grid-row: 1/2;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* .header_logo{} */
+.header_logo img{
+  width: 130px;
+}
+.header_menu{
+  display: flex;
+  gap: 20px;
+}
+.header_menu a{
+  text-transform: uppercase;
+  font-weight: 600;
+  color: snow;
+  padding: 6px 10px;
+  transition: all 0.6s;
+}
+.header_menu a:hover{
+  background: #4dcc8f;
+  border-radius: 3px;
+  transition: all 0.6s;
+}
+/* ======================================================$ */
+.header_hero{
+  width: 100%;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  color: snow;
+}
+
+.hero{
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 20px;
+}
+.hero h1{
+  font-size: 46px;
+}
+.hero p{
+  font-size: 16px;
+  line-height: 30px;
+}
+.hero_btn{
+  display: block;
+  background-color: #4dcc8f;
+  color: snow;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 13px 20px;
+  border-radius: 3px;
+  transition: all 0.6s;
+}
+.hero_btn:hover{
+  color: #4dcc8f;
+  background: snow;
+  transition: all 0.6s;
+}
+
+/* ======================================================$ */
+/* ======================================================$ 1300px*/
+@media(max-width: 1300px){
+
+}
+/* ======================================================$ 1200px*/
+@media(max-width: 1200px){
+  .header{
+    grid-template-columns: minmax(10px,150px) 1fr minmax(10px,150px);
+  }
+}
+/* ======================================================$ 1100px*/
+@media(max-width: 1100px){
+
+}
+/* ======================================================$ 1000px*/
+@media(max-width: 1000px){
+  .header{
+    grid-template-columns: minmax(10px,100px) 1fr minmax(10px,100px);
+  }
+}
+/* ======================================================$ 880px*/
+@media(max-width: 880px){
+  .header{
+    grid-template-columns: minmax(10px,50px) 1fr minmax(10px,50px);
+    grid-template-rows: auto 1fr;
+  }
+  .header_block_menu{
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: normal;
+    gap: 20px;
+  }
+}
+/* ======================================================$ 730px*/
+@media(max-width: 730px){
+  .hero{
+    width: 100%;
+  }
+  .hero h1{
+    font-size: 36px;
+  }
+  .hero p{
+    font-size: 14px;
+    line-height: 30px;
+  }
+}
+/* ======================================================$ 560px*/
+@media(max-width: 560px){
+  .header{
+    height: auto;
+    gap: 20px;
+    padding-bottom: 60px;
+  }
+  .header_menu{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .hero{
+    width: 100%;
+  }
+  .hero h1{
+    font-size: 28px;
+    padding-right: 10px;
+  }
+  .hero p{
+    font-size: var(--mobile-p-fs560);
+    line-height: 20px;
+  }
+}
+/* ======================================================$ 460px*/
+@media(max-width: 460px){
+
+}
+/* ======================================================$ 360px*/
+@media(max-width: 360px){
+  .header{
+    grid-template-columns: 10px 1fr 10px;
+  }
+  .header_menu{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .hero{
+    width: 100%;
+  }
+  .hero h1{
+    font-size: 28px;
+    padding-right: 10px;
+  }
+  .hero p{
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+/* ======================================================$ 290px*/
+@media(max-width: 290px){
+
+}
+/* ======================================================$ 250px*/
+@media(max-width: 250px){
+  .header{
+    grid-template-columns: 1fr;
+  }
+  .header_block_menu{
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .header_hero{
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding: 30px 10px;
+  }
+}
+/* ======================================================$ 220px*/
+@media(max-width: 220px){
+  .header_logo img{
+    width: 100px;
+  }
+  .hero_btn{
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+  }
+}

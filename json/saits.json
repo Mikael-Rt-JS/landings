@@ -1,0 +1,26 @@
+[
+  {
+    "id":1,
+    "categories_id": 1,
+    "title": "Сreate your online presene",
+    "user_id": 1,
+    "description": "Лендинг состоит из 8 блоков. Не имеет страниц. Имеет функцию которая отображает шкалу на сколько хорошо владеет пользователь интсрументом. Лендинг адаптивный для всех устройству.",
+    "image": "landing1_header.html.png",
+    "full_image": "landing1_full.html.png",
+    "qr_code_image":"43040qr1.png",
+    "demo_link": "./landing1.html",
+    "info_link": "./info_product.html"
+  },
+  {
+    "id":2,
+    "categories_id": 16,
+    "title": "Производство бытовок",
+    "user_id": 1,
+    "description": "Лендинг состоит из 8 блоков. Не имеет страниц. Имеет функцию которая отображает шкалу на сколько хорошо владеет пользователь интсрументом. Лендинг адаптивный для всех устройству.",
+    "image": "production_of_cabins_header.jpg",
+    "full_image": "production_of_cabins_full.png",
+    "qr_code_image":"production_of_cabins.png",
+    "demo_link": "./https://mikael-rt-js.github.io/production_of_cabins/production_of_cabins.html",
+    "info_link": "./info_product.html"
+  }
+]
